@@ -70,7 +70,16 @@ bun run dev
 ### Docker
 
 ```bash
-docker-compose up --build
+just dev up
+```
+
+Or run individual services:
+```bash
+just db          # Start database only
+just api         # Start backend only
+just frontend    # Start frontend only
+just down        # Stop and remove all containers
+just logs        # View logs
 ```
 
 ## Environment Variables
