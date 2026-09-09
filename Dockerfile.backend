@@ -4,12 +4,18 @@ WORKDIR /app
 
 RUN apt-get update && apt-get install -y \
     curl \
+    locales \
     && rm -rf /var/lib/apt/lists/*
+
+# Set locale
+RUN locale-gen en_US.UTF-8 && update-locale LANG=en_US.UTF-8
 
 # Install uv
 RUN curl -LsSf https://astral.sh/uv/install.sh | sh
 
 ENV PATH="/root/.local/bin:$PATH"
+ENV LANG=en_US.UTF-8
+ENV LC_ALL=en_US.UTF-8
 
 COPY backend/pyproject.toml backend/uv.lock* ./backend/
 
