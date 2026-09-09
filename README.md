@@ -84,7 +84,7 @@ Copy `.env.example` to `.env` and configure:
 
 ## Internationalization
 
-Translations are stored in the `i18n/` directory. Add new languages by creating JSON files with the same structure.
+The app defaults to Dutch (nl) but supports English (en). Translations are stored in the `i18n/` directory. Code comments and variable names remain in English, while user-facing text displays in Dutch. Add new languages by creating JSON files with the same structure.
 
 ## License
 
