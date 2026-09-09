@@ -21,3 +21,7 @@ stop:
 
 logs:
     docker-compose logs -f
+
+# Alias for dev
+up:
+    docker-compose up --build
