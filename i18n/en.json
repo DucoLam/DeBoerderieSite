@@ -1,0 +1,8 @@
+{
+  "common": {
+    "appName": "De Boerderie",
+    "welcome": "Welcome",
+    "error": "Error",
+    "success": "Success"
+  }
+}
